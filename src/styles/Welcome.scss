@@ -1,0 +1,26 @@
+.Welcome {
+  .Illustration {
+    height: 340px;
+    margin: 20px 0;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  .Signin-alt {
+    margin-top: 20px;
+    color: $midgrey;
+  }
+  .ComingSoon {
+    opacity: 0.3;
+    font-size: 2rem;
+  }
+  .AgentCol {
+    padding: 20px;
+    min-width: 400px;
+  }
+  .AppCol {
+    padding: 20px;
+    background-color: white;
+    min-width: 400px;
+  }
+}

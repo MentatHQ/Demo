@@ -1,0 +1,26 @@
+.AgentHome {
+  background-color: $lightBgd;
+  .Inner {
+    padding: 30px 50px;
+  }
+}
+.Chat {
+  color: white;
+  height: 80vh;
+  overflow: auto;
+}
+.ChatInput {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  input {
+    width: 100%;
+    background-color: white;
+    color: black;
+    border: none;
+    height: 20vh;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+}

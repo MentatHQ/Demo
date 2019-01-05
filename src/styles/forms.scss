@@ -1,0 +1,14 @@
+form {
+  .Field {
+    margin-bottom: 20px;
+    label {
+      font-weight: bold;
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+    .Error {
+      color: $error;
+      margin-top: 5px;
+    }
+  }
+}

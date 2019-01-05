@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "AktivGrotesk", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  color: $dark;
+  font-weight: 300;
+  background-color: white;
+}
+
+img{
+  max-width: 100%;
+}
+
+
+a, a:visited {
+  cursor: pointer;
+  text-decoration: none;
+  color: #192f7d;
+  &:hover {
+    color: #122567;
+  }
+}
+.Button, button {
+  outline: none;
+  display: inline-block;
+  border-radius: 100px;
+  padding: 15px 25px;
+  transition-duration: 0.2s;
+  &.border {
+    border: 2px solid #606CFF;
+  }
+  &.gradient {
+    @extend %purpleGradient-btn;
+    color: white;
+  }
+  &:before {
+    height: 0;
+  }
+  &:hover {
+    text-decoration: none;
+    &.border {
+      border: 2px solid white;
+    }
+    &.gradient {
+      @extend %purpleGradient-btn-hover;
+    }
+  }
+}
+p {
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.4rem;
+}
+input {
+  padding: 15px 25px;
+  outline: none;
+  border: 1px solid $lightgrey;
+  width: 100%;
+  background-color: transparent;
+}
+.SplitScreen {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  .Col20 {
+    width: 20%;
+  }
+  .Col40 {
+    width: 40%;
+  }
+  .Col50 {
+    width: 50%;
+  }
+  .Col60 {
+    width: 60%;
+  }
+  .Col80 {
+    width: 80%;
+  }
+  main {
+    flex-grow: 3;
+  }
+}
+.CenterText {
+  text-align: center;
+}
+.FullHeight {
+  height: 600px;
+  height: 100vh;
+}
+.CenterContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.Banner {
+  background-color: $warning;
+  padding: 8px;
+  color: white;
+  a {
+    margin: 0 4px;
+    color: white;
+    text-decoration: underline;
+  }
+}
+.BlueBgd {
+  background-color: $lightBgd;
+}
+.Web3Exception {
+  height: 100vh;
+  .Button {
+    margin-top: 50px;
+  }
+}
+.Error {
+  padding: 10px;
+  border: 1px solid $errorDark;
+  background-color: $error;
+  color: white;
+  border-radius: 5px;
+  &.margin-top {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+}
